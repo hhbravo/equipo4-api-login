@@ -8,25 +8,16 @@ import java.util.Date;
 @Data
 public class CreditCardRequest {
 
-
-    private Long idtarjeta;
     private String nrotarjeta;
     private String nombretarjeta;
     private String aliastarjeta;
     private String cvv;
-    private Date fechaexpiración;
-    private String estado;
+    private String fechaexpiración;
     private BigDecimal saldodisponible;
-    private String modena;
+    private String moneda;
     private String nrocuentacargocreacion;
-    private Boolean prendido;
-    private Boolean comopraxinternet;
-    private Boolean compraxextranjero;
-    private Boolean pagosmoviles;
-    private Boolean notificacion;
     private String correo;
     private String celular;
-    private Date fechacreacion;
     private Long idusuario;
 
 }
