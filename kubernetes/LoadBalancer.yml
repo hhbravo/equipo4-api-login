@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: equipo4-api-login-loadbalancer
+  labels: 
+    app: equipo4-api-login
+spec:
+  type: LoadBalancer 
+  selector:
+    app: equipo4-api-login
+  ports: 
+    - port: 8090
+      targetPort: 8090

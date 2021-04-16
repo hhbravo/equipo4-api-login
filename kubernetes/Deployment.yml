@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: equipo4-api-login-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: equipo4-api-login
+  template: 
+    metadata: # Dictionary
+      name: equipo4-api-login-pod
+      labels: # Dictionary 
+        app: equipo4-api-login       
+    spec:
+      containers: # List
+        - name: equipo4-api-login-container
+          image: hanshb/equipo4-api-login:1.0
+          ports:
+            - containerPort: 8090
